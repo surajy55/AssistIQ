@@ -1,0 +1,458 @@
+{
+    "diseases": [
+    {
+        "name": "Tuberculosis",
+        "categories": ["Respiratory", "Infectious"],
+        "symptoms": ["Persistent cough", "Coughing up blood", "Weight loss", "Fatigue", "Fever", "Night sweats"],
+        "precautions": ["Cover your mouth when coughing or sneezing", "Avoid close contact with TB patients", "Get vaccinated if available"],
+        "allopathy": {
+            "cure": "For tuberculosis, you need to undergo a course of antibiotics prescribed by a healthcare professional. Treatment typically lasts for several months and may include medications like isoniazid, rifampin, ethambutol, and pyrazinamide. It's important to complete the entire course of treatment to prevent drug resistance."
+        },
+        "ayurveda": {
+            "herbs": ["Neem", "Turmeric"],
+            "formulations": ["Neem capsules", "Turmeric milk"],
+            "cure": "To manage tuberculosis, you should consider incorporating herbs like neem and turmeric into your diet. Additionally, Ayurvedic formulations such as neem capsules or turmeric milk can help boost your immune system and support recovery."
+        }
+    },
+    {
+        "name": "Common Cold",
+        "categories": ["Respiratory", "Viral Infection"],
+        "symptoms": ["Runny nose", "Sore throat", "Cough", "Congestion", "Sneezing", "Low-grade fever"],
+        "precautions": ["Wash hands regularly", "Avoid close contact with infected individuals", "Stay hydrated"],
+        "allopathy": {
+            "cure": "Treatment for the common cold focuses on relieving symptoms. This may include decongestants, antihistamines, cough suppressants, and rest. No antibiotics are needed as it is caused by a virus."
+        },
+        "ayurveda": {
+            "herbs": ["Tulsi", "Ginger"],
+            "formulations": ["Tulsi tea", "Ginger-honey syrup"],
+            "cure": "In Ayurveda, tulsi and ginger are recommended for their immune-boosting properties. Drinking tulsi tea or a mixture of ginger and honey can help soothe the throat and relieve congestion."
+        }
+    },
+    {
+        "name": "Seasonal Flu",
+        "categories": ["Respiratory", "Viral Infection"],
+        "symptoms": ["Fever", "Body aches", "Chills", "Fatigue", "Cough", "Sore throat"],
+        "precautions": ["Get vaccinated annually", "Practice good hygiene", "Avoid crowded places during flu season"],
+        "allopathy": {
+            "cure": "Treatment includes antiviral medications (if prescribed), hydration, rest, and over-the-counter medications for symptom relief."
+        },
+        "ayurveda": {
+            "herbs": ["Giloy", "Turmeric"],
+            "formulations": ["Giloy juice", "Golden milk (turmeric milk)"],
+            "cure": "Ayurveda suggests giloy and turmeric for immune support and reducing inflammation. Giloy juice or turmeric milk can aid recovery from flu symptoms."
+        }
+    },
+    {
+        "name": "Malnutrition",
+        "categories": ["Nutritional", "General Health"],
+        "symptoms": ["Weight loss", "Fatigue", "Weakness", "Delayed wound healing", "Hair loss", "Irritability"],
+        "precautions": ["Eat a balanced diet rich in nutrients", "Regularly monitor weight and nutritional intake", "Seek medical attention if symptoms persist"],
+        "allopathy": {
+            "cure": "For malnutrition, treatment involves improving the diet and nutritional intake. This may include dietary counseling, nutritional supplements, and addressing any underlying health issues contributing to malnutrition."
+        },
+        "ayurveda": {
+            "herbs": ["Ashwagandha", "Shatavari"],
+            "formulations": ["Chyawanprash", "Ashwagandha capsules"],
+            "cure": "To address malnutrition, Ayurvedic practitioners recommend incorporating herbs like ashwagandha and shatavari into your diet. Additionally, formulations such as chyawanprash or ashwagandha capsules can help improve overall health and vitality."
+        }
+    },
+    {
+        "name": "Malaria",
+        "categories": ["Infectious", "Vector-borne"],
+        "symptoms": ["Fever", "Chills", "Headache", "Muscle aches", "Nausea", "Vomiting", "Fatigue"],
+        "precautions": ["Use insect repellent", "Sleep under insecticide-treated mosquito nets", "Take antimalarial medications if traveling to high-risk areas"],
+        "allopathy": {
+            "cure": "For malaria, treatment typically involves antimalarial medications prescribed by a healthcare professional. The choice of medication and duration of treatment depend on factors such as the type of malaria parasite and the severity of the infection."
+        },
+        "ayurveda": {
+            "herbs": ["Neem", "Tulsi"],
+            "formulations": ["Neem capsules", "Tulsi tea"],
+            "cure": "To manage malaria, Ayurvedic remedies like neem and tulsi are recommended for their antimalarial properties. Consuming neem capsules or drinking tulsi tea can help boost your immune system and support recovery from malaria."
+        }
+    },
+    {
+        "name": "Diarrheal Diseases",
+        "categories": ["Gastrointestinal", "Infectious"],
+        "symptoms": ["Frequent loose or watery stools", "Abdominal cramps", "Nausea", "Vomiting", "Fever", "Dehydration"],
+        "precautions": ["Drink plenty of fluids to prevent dehydration", "Practice good hygiene, including handwashing", "Avoid consuming contaminated food or water"],
+        "allopathy": {
+            "cure": "For diarrheal diseases, treatment focuses on preventing dehydration and addressing the underlying cause of the diarrhea. This may include oral rehydration solutions, antidiarrheal medications, and antibiotics if the diarrhea is caused by bacterial infection."
+        },
+        "ayurveda": {
+            "herbs": ["Ginger", "Fennel seeds"],
+            "formulations": ["Ginger tea", "Fennel seed water"],
+            "cure": "To manage diarrheal diseases, Ayurvedic remedies like ginger and fennel seeds are recommended for their digestive and anti-inflammatory properties. Drinking ginger tea or fennel seed water can help alleviate symptoms and support digestive health."
+        }
+    },
+    {
+        "name": "Migraine",
+        "categories": ["Neurological", "Chronic Disease"],
+        "symptoms": ["Severe headache", "Nausea", "Sensitivity to light and sound", "Visual disturbances","Eyes pain"],
+        "precautions": ["Avoid triggers such as certain foods and stress", "Maintain a regular sleep schedule", "Stay hydrated"],
+        "allopathy": {
+            "cure": "Migraine management involves medications like triptans, anti-nausea drugs, and pain relievers. Preventive medications may also be prescribed."
+        },
+        "ayurveda": {
+            "herbs": ["Ashwagandha", "Brahmi"],
+            "formulations": ["Ashwagandha tea", "Brahmi powder"],
+            "cure": "Ayurvedic management of migraines includes herbs like ashwagandha and brahmi, which help reduce stress and promote relaxation. Ashwagandha tea and brahmi powder can be beneficial."
+        }
+    },
+    {
+        "name": "Gastritis",
+        "categories": ["Gastrointestinal", "Acute Condition"],
+        "symptoms": ["Abdominal pain", "Nausea", "Loss of appetite", "Vomiting", "Feeling full quickly"],
+        "precautions": ["Avoid spicy foods", "Limit alcohol and caffeine", "Eat smaller, frequent meals", "Avoid NSAIDs"],
+        "allopathy": {
+            "cure": "Treatment includes antacids, proton pump inhibitors, and H2 blockers to reduce stomach acid production."
+        },
+        "ayurveda": {
+            "herbs": ["Amla", "Coriander", "Ginger"],
+            "formulations": ["Amla powder", "Coriander tea"],
+            "cure": "Amla and coriander are cooling for the stomach, while ginger aids digestion. Amla powder or coriander tea is suggested to relieve gastritis symptoms."
+        }
+    },
+    {
+        "name": "Respiratory Infections",
+        "categories": ["Respiratory", "Infectious"],
+        "symptoms": ["Cough", "Sore throat", "Runny or stuffy nose", "Fever", "Headache", "Muscle aches"],
+        "precautions": ["Practice good respiratory hygiene, including covering your mouth and nose when coughing or sneezing", "Avoid close contact with sick individuals", "Get vaccinated against common respiratory infections if available"],
+        "allopathy": {
+            "cure": "For respiratory infections, treatment depends on the specific cause of the infection. It may include antiviral medications, antibiotics for bacterial infections, and supportive care to alleviate symptoms such as fever and congestion."
+        },
+        "ayurveda": {
+            "herbs": ["Tulsi", "Licorice"],
+            "formulations": ["Tulsi tea", "Licorice decoction"],
+            "cure": "To manage respiratory infections, Ayurvedic remedies like tulsi and licorice are recommended for their antimicrobial and expectorant properties. Drinking tulsi tea or consuming licorice decoction can help soothe the throat and promote respiratory health."
+        }
+    },
+    {
+        "name": "Hypertension",
+        "categories": ["Cardiovascular", "Chronic Disease"],
+        "symptoms": ["High blood pressure", "Headaches", "Dizziness", "Blurred vision", "Chest pain", "Shortness of breath"],
+        "precautions": ["Maintain a healthy diet low in sodium and high in fruits and vegetables", "Engage in regular physical activity", "Monitor blood pressure regularly"],
+        "allopathy": {
+            "cure": "For hypertension, treatment typically involves lifestyle changes and medications to lower blood pressure. This may include medications like diuretics, ACE inhibitors, beta-blockers, and calcium channel blockers."
+        },
+        "ayurveda": {
+            "herbs": ["Arjuna", "Brahmi"],
+            "formulations": ["Arjuna capsules", "Brahmi powder"],
+            "cure": "To manage hypertension, Ayurvedic remedies like arjuna and brahmi are recommended for their cardioprotective and stress-reducing properties. Consuming arjuna capsules or brahmi powder can help support heart health and reduce blood pressure."
+        }
+    },
+    {
+        "name": "Diabetes",
+        "categories": ["Metabolic", "Chronic Disease"],
+        "symptoms": ["Increased thirst", "Frequent urination", "Fatigue", "Blurred vision", "Slow healing wounds", "Weight loss"],
+        "precautions": ["Maintain a healthy diet low in refined carbohydrates", "Engage in regular physical activity", "Monitor blood sugar levels regularly"],
+        "allopathy": {
+            "cure": "For diabetes, treatment involves managing blood sugar levels through diet, exercise, and medications. This may include oral medications like metformin, insulin therapy, and lifestyle modifications."
+        },
+        "ayurveda": {
+            "herbs": ["Gudmar", "Neem"],
+            "formulations": ["Gudmar capsules", "Neem juice"],
+            "cure": "To manage diabetes, Ayurvedic remedies like gudmar and neem are recommended for their blood sugar-lowering properties. Consuming gudmar capsules or neem juice can help regulate blood glucose levels and improve insulin sensitivity."
+        }
+    },
+    {
+        "name": "Cancer",
+        "categories": ["Oncological", "Chronic Disease"],
+        "symptoms": ["Unexplained weight loss", "Fatigue", "Lump or mass", "Changes in bowel or bladder habits", "Persistent cough or hoarseness", "Persistent indigestion or discomfort after eating"],
+        "precautions": ["Avoid tobacco use", "Maintain a healthy weight", "Eat a balanced diet rich in fruits and vegetables", "Engage in regular physical activity", "Get regular cancer screenings"],
+        "allopathy": {
+            "cure": "Treatment for cancer depends on the type and stage of the disease. Options may include surgery, chemotherapy, radiation therapy, immunotherapy, targeted therapy, hormone therapy, or a combination of treatments."
+        },
+        "ayurveda": {
+            "herbs": ["Ashwagandha", "Tulsi"],
+            "formulations": ["Ashwagandha capsules", "Tulsi tea"],
+            "cure": "While Ayurveda does not claim to cure cancer, certain herbs like ashwagandha and tulsi are believed to have immune-boosting and antioxidant properties that may support overall health and well-being during cancer treatment."
+        }
+    },
+    {
+        "name": "Mental Health Disorders",
+        "categories": ["Mental Health", "Neurological"],
+        "symptoms": ["Persistent sadness", "Feelings of hopelessness", "Loss of interest in previously enjoyed activities", "Changes in appetite or weight", "Difficulty sleeping or oversleeping", "Fatigue", "Difficulty concentrating"],
+        "precautions": ["Seek professional help from a mental health provider", "Practice self-care activities such as exercise, meditation, and hobbies", "Build a strong support network of friends and family"],
+        "allopathy": {
+            "cure": "Treatment for mental health disorders may include psychotherapy, medication, or a combination of both. Common medications for depression and anxiety include selective serotonin reuptake inhibitors (SSRIs), serotonin-norepinephrine reuptake inhibitors (SNRIs), and benzodiazepines."
+        },
+        "ayurveda": {
+            "herbs": ["Brahmi", "Ashwagandha"],
+            "formulations": ["Brahmi oil", "Ashwagandha capsules"],
+            "cure": "In Ayurveda, herbs like brahmi and ashwagandha are used to support mental well-being and reduce symptoms of anxiety and depression. Applying brahmi oil topically or consuming ashwagandha capsules may help alleviate symptoms and promote relaxation."
+        }
+    },
+    {
+        "name": "Dengue Fever",
+        "categories": ["Infectious", "Vector-borne"],
+        "symptoms": ["High fever", "Severe headache", "Pain behind the eyes", "Joint and muscle pain", "Nausea", "Vomiting", "Skin rash"],
+        "precautions": ["Prevent mosquito bites by using insect repellent and wearing protective clothing", "Eliminate mosquito breeding sites by emptying standing water containers", "Seek medical attention if you develop symptoms of dengue fever"],
+        "allopathy": {
+            "cure": "For dengue fever, treatment focuses on relieving symptoms and preventing complications. This may include bed rest, hydration with oral rehydration solutions or intravenous fluids, and pain relievers like acetaminophen. Avoiding medications like aspirin and ibuprofen that can increase bleeding risk is important."
+        },
+        "ayurveda": {
+            "herbs": ["Neem", "Papaya leaves"],
+            "formulations": ["Neem capsules", "Papaya leaf juice"],
+            "cure": "In Ayurveda, herbs like neem and papaya leaves are recommended for their antiviral and immune-boosting properties to manage dengue fever. Consuming neem capsules or drinking papaya leaf juice may help alleviate symptoms and promote recovery."
+        }
+    },
+    {
+        "name": "Urinary Tract Infection (UTI)",
+        "categories": ["Urinary", "Infectious"],
+        "symptoms": ["Burning sensation during urination", "Frequent urination", "Cloudy urine", "Pelvic pain", "Strong-smelling urine","Yellowish urine"],
+        "precautions": ["Drink plenty of water", "Practice good hygiene", "Avoid holding urine for too long", "Wear loose-fitting clothing"],
+        "allopathy": {
+            "cure": "Antibiotics are prescribed to treat UTIs. Drinking cranberry juice and maintaining hydration may help prevent recurrence."
+        },
+        "ayurveda": {
+            "herbs": ["Coriander", "Amla", "Punarnava"],
+            "formulations": ["Coriander seed tea", "Amla juice"],
+            "cure": "Coriander seed tea and amla juice are suggested in Ayurveda to flush out toxins and soothe the urinary tract."
+        }
+    },
+    {
+        "name": "Heat Exhaustion",
+        "categories": ["Environmental", "Temperature-related"],
+        "symptoms": [
+            "Headache","Fatigue or tiredness","Dizziness","Weakness","Nausea","Muscle cramps","Excessive sweating","Rapid pulse"
+        ],
+        "precautions": [
+            "Stay hydrated with plenty of water and electrolyte-rich drinks",
+            "Avoid prolonged exposure to direct sunlight, especially during peak hours",
+            "Wear light, breathable clothing",
+            "Take frequent breaks if you’re outdoors in the heat",
+            "Seek shade or a cool environment when needed"
+        ],
+        "allopathy": {
+            "cure": "For heat exhaustion, move to a cooler environment immediately and rest. Hydrate with water or an electrolyte solution, and apply a cool compress to lower body temperature. If symptoms persist or worsen, seek medical attention as this may indicate heat stroke."
+        },
+        "ayurveda": {
+            "herbs": ["Amla", "Coriander seeds", "Sandalwood"],
+            "formulations": ["Amla juice", "Coriander seed water", "Sandalwood paste"],
+            "cure": "To manage heat exhaustion, Ayurveda recommends cooling remedies such as amla juice, which is rich in vitamin C to hydrate and rejuvenate the body. Drinking water infused with coriander seeds or applying a sandalwood paste to the forehead may also help reduce body temperature and relieve headache."
+        }
+    },
+    
+    {
+        "name": "Chikungunya",
+        "categories": ["Infectious", "Vector-borne"],
+        "symptoms": ["Fever", "Joint pain", "Muscle pain", "Headache", "Fatigue", "Rash"],
+        "precautions": ["Prevent mosquito bites by using insect repellent and wearing protective clothing", "Eliminate mosquito breeding sites by emptying standing water containers", "Seek medical attention if you develop symptoms of chikungunya"],
+        "allopathy": {
+            "cure": "For chikungunya, treatment focuses on relieving symptoms such as fever and joint pain. This may include rest, hydration, and pain relievers like acetaminophen or ibuprofen. Avoiding medications like aspirin that can increase bleeding risk is important."
+        },
+        "ayurveda": {
+            "herbs": ["Giloy", "Papaya leaves"],
+            "formulations": ["Giloy juice", "Papaya leaf extract"],
+            "cure": "In Ayurveda, herbs like giloy and papaya leaves are recommended for their immune-boosting and anti-inflammatory properties to manage chikungunya symptoms. Consuming giloy juice or papaya leaf extract may help alleviate fever and joint pain."
+        }
+    },
+    {
+        "name": "Vitamin Deficiencies",
+        "categories": ["Nutritional", "General Health"],
+        "symptoms": [
+            "Fatigue",
+            "Weakness",
+            "Dry skin",
+            "Brittle nails",
+            "Muscle cramps",
+            "Poor immune function",
+            "Vision problems",
+            "Mood changes"
+        ],
+        "precautions": [
+            "Consume a balanced diet rich in various vitamins",
+            "Consider fortified foods or supplements if necessary",
+            "Consult with a healthcare provider for regular blood tests",
+            "Address specific vitamin needs based on lifestyle or dietary preferences (e.g., B12 for vegetarians)"
+        ],
+        "allopathy": {
+            "cure": "Treatment for vitamin deficiencies involves dietary changes to include vitamin-rich foods. For specific deficiencies: Vitamin D (sunlight exposure, fortified dairy products), Vitamin B12 (meat, eggs, dairy or supplements for vegetarians), Vitamin C (citrus fruits, green leafy vegetables), and Vitamin A (carrots, sweet potatoes). Vitamin supplements may be recommended in cases of severe deficiency, as prescribed by a healthcare provider."
+        },
+        "ayurveda": {
+            "herbs": ["Amla", "Moringa", "Ashwagandha"],
+            "formulations": ["Amla powder or juice", "Moringa leaf powder", "Ashwagandha capsules"],
+            "cure": "Ayurveda suggests incorporating nutrient-dense herbs like amla (rich in Vitamin C), moringa (packed with vitamins and minerals), and ashwagandha (supports energy and immunity) to counter vitamin deficiencies. Consuming these herbs in powder or juice form can help address specific nutrient gaps and promote overall vitality."
+        },
+        "specific_deficiencies": [
+            {
+                "vitamin": "Vitamin D",
+                "symptoms": ["Bone pain", "Muscle weakness", "Fatigue", "Mood changes"],
+                "foods": ["Salmon", "Mushrooms", "Fortified milk"],
+                "ayurveda": {
+                    "herbs": ["Ashwagandha", "Sesame oil"],
+                    "formulations": ["Ashwagandha powder", "Sesame oil massage"]
+                }
+            },
+            {
+                "vitamin": "Vitamin B12",
+                "symptoms": ["Fatigue", "Weakness", "Pale skin", "Shortness of breath"],
+                "foods": ["Eggs", "Meat", "Dairy products"],
+                "ayurveda": {
+                    "herbs": ["Spirulina", "Moringa"],
+                    "formulations": ["Spirulina powder", "Moringa capsules"]
+                }
+            },
+            {
+                "vitamin": "Vitamin C",
+                "symptoms": ["Bleeding gums", "Weak immune function", "Slow wound healing", "Dry skin"],
+                "foods": ["Oranges", "Bell peppers", "Strawberries"],
+                "ayurveda": {
+                    "herbs": ["Amla"],
+                    "formulations": ["Amla juice", "Amla powder"]
+                }
+            },
+            {
+                "vitamin": "Vitamin A",
+                "symptoms": ["Night blindness", "Dry skin", "Frequent infections"],
+                "foods": ["Carrots", "Sweet potatoes", "Spinach"],
+                "ayurveda": {
+                    "herbs": ["Amla", "Shatavari"],
+                    "formulations": ["Amla powder", "Shatavari capsules"]
+                }
+            }
+        ]
+    },
+    
+    {
+        "name": "Typhoid Fever",
+        "categories": ["Infectious", "Bacterial"],
+        "symptoms": ["High fever", "Headache", "Stomach pain", "Weakness", "Loss of appetite", "Constipation or diarrhea", "Rose spots on the trunk"],
+        "precautions": ["Practice good hygiene by washing hands regularly", "Avoid consuming contaminated food and water", "Seek medical attention if you develop symptoms of typhoid fever"],
+        "allopathy": {
+            "cure": "For typhoid fever, treatment involves antibiotics to kill the Salmonella bacteria. Common antibiotics include ciprofloxacin, ceftriaxone, and azithromycin. Rest and hydration with oral rehydration solutions are also important."
+        },
+        "ayurveda": {
+            "herbs": ["Triphala", "Neem"],
+            "formulations": ["Triphala churna", "Neem capsules"],
+            "cure": "In Ayurveda, herbs like triphala and neem are recommended for their antimicrobial and digestive properties to manage typhoid fever symptoms. Consuming triphala churna or neem capsules may help support gastrointestinal health and boost immunity."
+        }
+    },
+    {
+        "name": "Hookworm Infection",
+        "categories": ["Parasitic", "Infectious"],
+        "symptoms": ["Itchy rash at the site of infection", "Abdominal pain", "Diarrhea", "Fatigue", "Weight loss", "Anemia"],
+        "precautions": ["Practice good hygiene by wearing shoes outdoors", "Avoid walking barefoot in areas with contaminated soil", "Seek medical attention if you develop symptoms of hookworm infection"],
+        "allopathy": {
+            "cure": "For hookworm infection, treatment involves anthelmintic medications to kill the parasites. Common medications include albendazole and mebendazole. Iron supplements may also be prescribed to treat anemia."
+        },
+        "ayurveda": {
+            "herbs": ["Vidanga", "Triphala"],
+            "formulations": ["Vidanga churna", "Triphala capsules"],
+            "cure": "In Ayurveda, herbs like vidanga and triphala are recommended for their anthelmintic and digestive properties to manage hookworm infection symptoms. Consuming vidanga churna or triphala capsules may help expel parasites and improve gastrointestinal health."
+        }
+    },
+    {
+        "name": "Anemia",
+        "categories": ["Hematologic", "Nutritional"],
+        "symptoms": ["Fatigue", "Weakness", "Pale or yellowish skin", "Shortness of breath", "Dizziness or lightheadedness", "Cold hands and feet", "Headache"],
+        "precautions": ["Consume a diet rich in iron, including foods like red meat, poultry, fish, beans, and fortified cereals", "Take iron supplements as prescribed by a healthcare provider", "Seek medical attention if you develop symptoms of anemia"],
+        "allopathy": {
+            "cure": "For anemia, treatment involves addressing the underlying cause and may include iron supplements, vitamin B12 injections, or blood transfusions. Dietary changes to include more iron-rich foods are also recommended."
+        },
+        "ayurveda": {
+            "herbs": ["Shatavari", "Punarnava"],
+            "formulations": ["Shatavari churna", "Punarnava capsules"],
+            "cure": "In Ayurveda, herbs like shatavari and punarnava are recommended for their rejuvenating and blood-building properties to manage anemia symptoms. Consuming shatavari churna or punarnava capsules may help improve hemoglobin levels and overall energy."
+        }
+    },
+    {
+        "name": "Skin Infections",
+        "categories": ["Dermatologic", "Infectious"],
+        "symptoms": ["Redness", "Swelling", "Pain or tenderness", "Warmth", "Pus-filled blisters or sores", "Itching", "Burning or stinging sensation"],
+        "precautions": ["Practice good hygiene by keeping skin clean and dry", "Avoid sharing personal items like towels and razors", "Seek medical attention if you develop symptoms of a skin infection"],
+        "allopathy": {
+            "cure": "For skin infections, treatment may include topical or oral antibiotics to kill the bacteria or fungi causing the infection. Antifungal or antiviral medications may be prescribed for fungal or viral infections. Keeping the affected area clean and dry is also important."
+        },
+        "ayurveda": {
+            "herbs": ["Neem", "Turmeric"],
+            "formulations": ["Neem oil", "Turmeric paste"],
+            "cure": "In Ayurveda, herbs like neem and turmeric are recommended for their antimicrobial and anti-inflammatory properties to manage skin infections. Applying neem oil or turmeric paste topically may help reduce inflammation and promote healing."
+        }
+    },
+    {
+        "name": "Asthma",
+        "categories": ["Respiratory", "Chronic"],
+        "symptoms": ["Shortness of breath", "Chest tightness", "Wheezing", "Coughing", "Difficulty sleeping due to coughing or wheezing"],
+        "precautions": ["Identify and avoid triggers like allergens, smoke, and air pollution", "Take prescribed medications as directed, including inhalers and oral medications", "Seek medical attention if you experience severe symptoms or frequent asthma attacks"],
+        "allopathy": {
+            "cure": "For asthma, treatment involves bronchodilators to open the airways and corticosteroids to reduce inflammation. Long-term control medications may include inhaled corticosteroids and leukotriene modifiers. Rescue medications like short-acting beta agonists are used for quick relief of symptoms."
+        },
+        "ayurveda": {
+            "herbs": ["Adhatoda", "Licorice"],
+            "formulations": ["Adhatoda leaves decoction", "Licorice tea"],
+            "cure": "In Ayurveda, herbs like adhatoda and licorice are recommended for their bronchodilator and anti-inflammatory properties to manage asthma symptoms. Consuming adhatoda leaves decoction or licorice tea may help improve respiratory function and reduce inflammation."
+        }
+    },
+    {
+        "name": "Hepatitis",
+        "categories": ["Hepatic", "Infectious"],
+        "symptoms": ["Fatigue", "Jaundice", "Abdominal pain", "Loss of appetite", "Nausea and vomiting", "Dark urine", "Pale stools"],
+        "precautions": ["Practice good hygiene, including handwashing and safe food handling", "Avoid sharing personal items like razors or toothbrushes", "Get vaccinated against hepatitis A and B if not already vaccinated"],
+        "allopathy": {
+            "cure": "For hepatitis, treatment depends on the type of hepatitis and may include antiviral medications, corticosteroids, or immune system modulators. Supportive care to manage symptoms like nausea and abdominal pain is also important."
+        },
+        "ayurveda": {
+            "herbs": ["Bhumyamalaki", "Kutki"],
+            "formulations": ["Bhumyamalaki churna", "Kutki tablets"],
+            "cure": "In Ayurveda, herbs like bhumyamalaki and kutki are recommended for their hepatoprotective and immune-stimulating properties to manage hepatitis symptoms. Consuming bhumyamalaki churna or kutki tablets may help support liver function and boost immunity."
+        }
+    },
+    {
+        "name": "Diarrhea",
+        "categories": ["Gastrointestinal", "Acute Condition"],
+        "symptoms": ["Frequent loose stools", "Abdominal cramps", "Dehydration", "Bloating", "Weakness"],
+        "precautions": ["Stay hydrated", "Avoid greasy and spicy foods", "Practice good hygiene", "Consume probiotics"],
+        "allopathy": {
+            "cure": "Oral rehydration solutions (ORS) are recommended to prevent dehydration. Anti-diarrheal medications and probiotics may be prescribed as needed."
+        },
+        "ayurveda": {
+            "herbs": ["Bael", "Cumin", "Fenugreek"],
+            "formulations": ["Bael fruit juice", "Cumin tea"],
+            "cure": "Bael fruit and cumin tea help with digestion and reduce symptoms of diarrhea. Fenugreek seeds soaked in water are also suggested for faster recovery."
+        }
+    },
+    {
+        "name": "Intestinal Parasites",
+        "categories": ["Parasitic", "Infectious"],
+        "symptoms": ["Abdominal pain", "Diarrhea", "Nausea and vomiting", "Weight loss", "Fatigue", "Visible worms in stool"],
+        "precautions": ["Practice good hygiene, including washing hands regularly", "Cook food thoroughly, especially meat and fish", "Avoid drinking untreated water from potentially contaminated sources"],
+        "allopathy": {
+            "cure": "For intestinal parasites, treatment involves antiparasitic medications to kill the parasites. Common medications include albendazole, mebendazole, and praziquantel. Hydration and nutritional support may also be needed."
+        },
+        "ayurveda": {
+            "herbs": ["Vidanga", "Triphala"],
+            "formulations": ["Vidanga churna", "Triphala capsules"],
+            "cure": "In Ayurveda, herbs like vidanga and triphala are recommended for their anthelmintic and digestive properties to manage intestinal parasite infections. Consuming vidanga churna or triphala capsules may help expel parasites and improve gastrointestinal health."
+        }
+    },
+    {
+        "name": "Vitamin Deficiencies",
+        "categories": ["Nutritional", "Deficiency"],
+        "symptoms": ["Fatigue", "Weakness", "Pale or yellowish skin", "Shortness of breath", "Dizziness or lightheadedness", "Muscle weakness", "Brittle or spoon-shaped nails"],
+        "precautions": ["Consume a balanced diet rich in vitamins and minerals", "Take vitamin supplements as recommended by a healthcare provider", "Seek medical attention if you experience symptoms of vitamin deficiencies"],
+        "allopathy": {
+            "cure": "For vitamin deficiencies, treatment involves addressing the specific nutrient deficiency. This may include dietary changes to incorporate more nutrient-rich foods and supplementation with vitamins or minerals as needed."
+        },
+        "ayurveda": {
+            "herbs": ["Amla", "Ashwagandha"],
+            "formulations": ["Amla juice", "Ashwagandha capsules"],
+            "cure": "In Ayurveda, herbs like amla and ashwagandha are recommended for their nutritive and adaptogenic properties to manage vitamin deficiencies. Consuming amla juice or ashwagandha capsules may help boost immunity and overall health."
+        }
+    },
+    {
+        "name": "Eye Infections",
+        "categories": ["Ophthalmic", "Infectious"],
+        "symptoms": ["Redness", "Itching or irritation", "Swelling", "Discharge", "Blurry vision", "Sensitivity to light"],
+        "precautions": ["Practice good eye hygiene, including washing hands before touching the eyes", "Avoid sharing eye makeup or contact lenses", "Seek medical attention if you develop symptoms of an eye infection"],
+        "allopathy": {
+            "cure": "For eye infections, treatment may include topical or oral antibiotics to kill the bacteria or fungi causing the infection. Antiviral medications may be prescribed for viral infections. Warm compresses and artificial tears can help soothe symptoms like redness and irritation."
+        },
+        "ayurveda": {
+            "herbs": ["Triphala", "Neem"],
+            "formulations": ["Triphala eye wash", "Neem eye drops"],
+            "cure": "In Ayurveda, herbs like triphala and neem are recommended for their antimicrobial and anti-inflammatory properties to manage eye infections. Using triphala eye wash or neem eye drops may help reduce inflammation and promote healing."
+        }
+    }
+]
+}

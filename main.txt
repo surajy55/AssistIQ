@@ -1,0 +1,290 @@
+import tkinter as tk
+from tkinter import messagebox
+import pyttsx3
+import speech_recognition as sr
+import requests
+import datetime
+import pyautogui
+import random
+from NewsRead import latestnews  # Import the latestnews function from NewsRead module
+from health_info import healthinfo  # Import the healthinfo function from health_info module
+from SEARCHNOW import searchGoogle, searchYoutube, searchWikipedia  # Import functions from SEARCHNOW module
+
+# Initialization for pyttsx3
+engine = pyttsx3.init("sapi5")
+voices = engine.getProperty("voices")
+engine.setProperty("voice", voices[0].id)
+engine.setProperty("rate", 170)
+
+# Constants
+GREETINGS = [
+    "hello jarvis", "jarvis", "wake up jarvis", "you there jarvis", "time to work jarvis",
+    "hey jarvis", "ok jarvis", "are you there"
+]
+GREETINGS_RES = [
+    "Always there for you sir", "I am ready sir", "Your wish is my command",
+    "How can I help you sir?", "I am online and ready sir"
+]
+HEALTH_QUERIES = [
+    "i have a health issue", "i am having a health problem", "i am feeling sick", "i am unwell", "i feel ill",
+    "i am having a fever", "i have a fever", "i am not feeling well", "i have a health condition", "i am having health issues"
+]
+
+# Helper functions
+def speak(audio):
+    print(audio)  # Print to terminal
+    engine.say(audio)
+    engine.runAndWait()
+
+def takeCommand():
+    r = sr.Recognizer()
+    query = None
+
+    with sr.Microphone() as source:
+        print("Listening...")
+        r.adjust_for_ambient_noise(source, duration=1)  # Adjust for ambient noise
+        try:
+            audio = r.listen(source, timeout=4)
+        except sr.WaitTimeoutError:
+            print("Listening timed out while waiting for phrase to start")
+            return "None"
+        except Exception as e:
+            print(f"Error while listening: {e}")
+            return "None"
+    try:
+        print("Recognizing...")
+        query = r.recognize_google(audio, language='en-in')
+        print(f"You said: {query}\n")
+        return query.lower()
+    except sr.UnknownValueError:
+        print("Google Speech Recognition could not understand audio")
+        return "None"
+    except sr.RequestError as e:
+        print(f"Could not request results from Google Speech Recognition service; {e}")
+        return "None"
+    except Exception as e:
+        print(f"Error during recognition: {e}")
+        return "None"
+
+def log_response(response):
+    print(f"Jarvis: {response}")
+
+def startup():
+    speak("Initializing Jarvis")
+    speak("All systems have been activated")
+   
+    hour = int(datetime.datetime.now().hour)
+    if 0 <= hour < 12:
+        speak("Good Morning")
+    elif 12 <= hour < 18:
+        speak("Good Afternoon")
+    else:
+        speak("Good Evening")
+    current_time = datetime.datetime.now().strftime("%H:%M:%S")
+    speak(f"Currently it is {current_time}")
+    speak("I am online and ready sir. Please tell me how may I help you")
+
+def fetch_weather(city):
+    api_key = "71742e7f9e446671bbc4fb40b66f8045"  # Replace with your OpenWeatherMap API key
+    units_format = "metric"  # Units in Celsius
+
+    base_url = "http://api.openweathermap.org/data/2.5/weather"
+    params = {
+        "q": city,
+        "appid": api_key,
+        "units": units_format
+    }
+
+    try:
+        response = requests.get(base_url, params=params)
+        data = response.json()
+
+        if response.status_code == 200:  # Success response from OpenWeatherMap API
+            weather_description = data["weather"][0]["description"]
+            temperature = data["main"]["temp"]
+            humidity = data["main"]["humidity"]
+            wind_speed = data["wind"]["speed"]
+            return {
+                "weather_description": weather_description,
+                "temperature": temperature,
+                "humidity": humidity,
+                "wind_speed": wind_speed
+            }
+        else:
+            print(f"Error fetching weather data: {data['message']}")
+            return None
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching weather data: {e}")
+        return None
+
+def handle_command(query):
+    query = query.lower()
+
+    if query in GREETINGS:
+        response = random.choice(GREETINGS_RES)
+        speak(response)
+        log_response(response)
+        return False
+
+    if "wake up" in query:
+        response = "I am awake, sir."
+        speak(response)
+        log_response(response)
+    elif "go to sleep" in query:
+        response = "Ok sir, you can call me anytime."
+        speak(response)
+        log_response(response)
+        return True
+
+    elif "hello" in query:
+        response = "Hello sir, how are you?"
+        speak(response)
+        log_response(response)
+    elif "i am fine" in query:
+        response = "That's great, sir"
+        speak(response)
+        log_response(response)
+    elif "how are you" in query:
+        response = "Perfect, sir"
+        speak(response)
+        log_response(response)
+    elif "thank you" in query:
+        response = "You are welcome, sir"
+        speak(response)
+        log_response(response)
+
+    elif "pause" in query:
+        pyautogui.press("k")
+        response = "Video paused"
+        speak(response)
+        log_response(response)
+    elif "play" in query:
+        pyautogui.press("k")
+        response = "Video played"
+        speak(response)
+        log_response(response)
+    elif "mute" in query:
+        pyautogui.press("m")
+        response = "Video muted"
+        speak(response)
+        log_response(response)
+
+    elif "volume up" in query:
+        from keyboard import volumeup
+        response = "Turning volume up, sir"
+        speak(response)
+        log_response(response)
+        volumeup()
+    elif "volume down" in query:
+        from keyboard import volumedown
+        response = "Turning volume down, sir"
+        speak(response)
+        log_response(response)
+        volumedown()
+
+    elif "open" in query:
+        from Dictapp import openappweb
+        openappweb(query)
+    elif "close" in query:
+        from Dictapp import closeappweb
+        closeappweb(query)
+
+    elif "google" in query:
+        searchGoogle(query)
+    elif "youtube" in query:
+        searchYoutube(query)
+    elif "wikipedia" in query:
+        searchWikipedia(query)
+
+    elif "news" in query:
+        latestnews()  # Call the latestnews function from NewsRead module
+
+    elif "temperature" in query or "weather" in query:
+        if "temperature" in query:
+            response = "Sure, please tell me the city name."
+            speak(response)
+            log_response(response)
+        else:
+            response = "Sure, please tell me the city name for weather information."
+            speak(response)
+            log_response(response)
+        
+        city_name = takeCommand()
+        if city_name != "None":
+            weather_info = fetch_weather(city_name)
+            if weather_info:
+                if "temperature" in query:
+                    response = f"The current temperature in {city_name} is {weather_info['temperature']} degrees Celsius."
+                    speak(response)
+                    log_response(response)
+                else:
+                    response = f"""
+                    The weather in {city_name} is currently {weather_info['weather_description']}.
+                    Temperature: {weather_info['temperature']} degrees Celsius.
+                    Humidity: {weather_info['humidity']}%
+                    Wind Speed: {weather_info['wind_speed']} km/h
+                    """
+                    speak(response)
+                    log_response(response)
+            else:
+                response = f"Sorry, I couldn't find weather information for {city_name}. Please try again."
+                speak(response)
+                log_response(response)
+        else:
+            response = "Sorry, I didn't catch that. Please try again."
+            speak(response)
+            log_response(response)
+
+    elif "the time" in query:
+        strTime = datetime.datetime.now().strftime("%H:%M:%S")
+        response = f"Sir, the time is {strTime}"
+        speak(response)
+        log_response(response)
+
+    elif any(phrase in query for phrase in HEALTH_QUERIES):
+        response = "Let me check that for you."
+        speak(response)
+        log_response(response)
+        healthinfo()  # Call the healthinfo function from health_info module
+
+    elif "finally sleep" in query:
+        response = "Going to sleep, sir"
+        speak(response)
+        log_response(response)
+        return True
+
+    elif "tell me about" in query:
+        person = query.replace("tell me about", "").strip()
+        response = f"Searching information about {person}"
+        speak(response)
+        log_response(response)
+        searchGoogle(person)
+
+    return False
+
+def on_click():
+    query = takeCommand()
+    if query != "None":
+        if handle_command(query):
+            messagebox.showinfo("Sleeping", "The assistant is going to sleep.")
+    else:
+        messagebox.showinfo("Try again", "Please say that again.")
+
+# Setting up the GUI
+root = tk.Tk()
+root.title("Voice Assistant")
+
+canvas = tk.Canvas(root, height=300, width=400)
+canvas.pack()
+
+frame = tk.Frame(root, bg='white')
+frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
+
+button = tk.Button(frame, text="Speak", padx=10, pady=5, fg="white", bg="#263D42", command=on_click)
+button.pack()
+
+# Run startup function
+startup()
+
+root.mainloop()
+last modifies= 15.30 all working fine not impmeneted and enhanced vocabularies or jarrvis info that is implemented after it 
